@@ -1,0 +1,1 @@
+{"version":3,"file":"Question.d.ts","sourceRoot":"","sources":["../../../../src/modules/main/models/Question.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,sBAAsB,CAAC;AAE7C,qBAAa,QAAS,SAAQ,KAAK;IAC/B;;OAEG;gBACS,EAAE,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,EAAE,EAAE,MAAM,EAAE,MAAM;CAO9E"}
