@@ -42,6 +42,6 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "noEmit": true
   }
 }

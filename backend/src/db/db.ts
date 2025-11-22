@@ -1,5 +1,5 @@
 import sqlite from "node:sqlite"
-import type { ModelClass, Model } from "./interfaces/models/model.interface.ts";
+import type { ModelClass } from "./interfaces/models/model.interface.ts";
 
 export class DB {
     /**
@@ -16,7 +16,7 @@ export class DB {
         let template = `CREATE TABLE IF NOT EXISTS ${model.modelName} (`;
         const fieldsArray: string[] = [];
         for (const field in model.fields) {
-            const modelField = model.fields[field as keyof Model];
+            const modelField = model.fields[field as keyof ModelClass["fields"]];
             switch (typeof modelField) {
                 case "string":
                     this.addToTemplate(field, fieldsArray, `TEXT NOT NULL`);

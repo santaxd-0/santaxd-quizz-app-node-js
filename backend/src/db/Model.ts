@@ -1,8 +1,8 @@
 import { createId, type Id } from "../@types/custom-types.ts";
-import { DB } from "./db.ts";
 import type { ModelClass } from "./interfaces/models/model.interface.ts";
+import { DataClass } from "./ORM/DataClass.ts";
 
-export class Model extends DB {
+export class Model extends DataClass {
     /**
      * Root class for all Models
      */
@@ -17,7 +17,7 @@ export class Model extends DB {
         this.createTableByModel(this.modelProperties);
     }
 
-    get modelProperties(): ModelClass {
+    get modelProperties() : ModelClass {
         return {
             modelName: this.constructor.name,
             fields: {
